@@ -12,7 +12,7 @@ export default function HomePage() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       <div className="flex flex-wrap gap-4" >
         {[...mockImages].map((image)=>(
-          <div className="w-48">
+          <div key={image.id} className="w-48">
             <img src={image.url} alt="" />
           </div>
         ))}
